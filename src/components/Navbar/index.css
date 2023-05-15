@@ -1,0 +1,158 @@
+nav{
+    max-height: 100px;
+    background-color: #fff;
+    z-index: 99999999;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+
+}
+.nav-content{
+    max-width: 1240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-content img{
+    width: 100%;
+    height: 50px;
+    width: 165px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.nav-content ul{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-content ul li{
+    height: 100%;
+    margin-bottom: auto;
+    padding: 31.5px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.nav-content ul li:hover{
+    color: #c94f14;
+    border-bottom-color: #c94f14;
+}
+
+.search{
+    font-size: 24px;
+    font-weight: bold;
+    padding:0 1rem;
+    border-left: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    position: absolute;
+    right:25%;
+    height: 50%;
+    width: 50%;
+    border: 1px solid gray;
+    padding: 0 1rem;
+    background-color: #fff;
+    display: none;
+}
+
+
+.search-bar input{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+
+.open-search{
+    display: flex;
+    align-items: center;
+}
+
+.close-search{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+
+
+.search-icon{
+    cursor: pointer;
+}
+
+.call-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #c94f14;
+    padding: .5rem 1rem;
+}
+.call-wrapper a{
+    text-decoration: none;
+    color: #fff;
+}
+.span-1{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+.span-2{
+    text-align: center;
+    font-size: 13px;
+}
+
+.tel-icon{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links{
+    position: relative;
+}
+.nav-sub-links{
+    border-top: 1px solid #c94f14;
+    background-color: #fff;
+    width: 200%;
+    height: auto;
+    position: absolute;
+    display: none;
+    top: 86px;
+    transition: all .2s ;
+}
+.nav-sub-links > ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-sub-links > ul >li{
+    color: #000;
+    height: 10px;
+    border: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.nav-links:hover > div{
+    display: flex;
+}

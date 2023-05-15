@@ -1,0 +1,124 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222432;
+}
+.footer ul a{
+    color: #ccc;
+}
+.footer ul a:hover{
+    color: #c94f14;
+}
+.footer-wrapper{
+    min-width: 1240px;
+    color: #fff;
+}
+.footer-sec1{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+}
+.footer-sec1-links{
+    width: 60%;
+    border-right: 1px solid #303a43;
+}
+.footer-sec-1-links{
+    display: flex;
+}
+.links-wrapper{
+    margin: 0 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-sec-1-links li{
+    list-style: none;
+    /* cursor: pointer; */
+}
+
+.main-links{
+    font-size: 18px;
+    font-weight: 700;
+    /* cursor: pointer; */
+    margin: 0.5rem 0;
+    display: inline-block;
+    text-decoration: "none";
+     color: "#fff"
+}
+.sub-links{
+    font-size: 1.125rem;
+    margin: .8rem 0;
+    color: red;
+}
+.sub-links:hover{
+    color: #c94f14;
+}
+
+.footer-spacer{
+    width: 10%;
+    height: 100%;
+}
+
+.connect-with-us{
+    /* text-align: center; */
+    width: 30%;
+}
+.footer-social-links{
+    display: flex;
+    /* justify-content: center; */
+}
+.social-links{
+    /* padding: 1rem; */
+    margin: .5rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: #3f5154;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-out;
+    font-size: 22px;
+}
+.social-links:first-child{
+    margin-left: 0;
+}
+.social-links:hover{
+    background-color: #c94f14;
+}
+
+.footer-sec2{
+    background-color: #1c1e2a;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.footer-sec2-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.footer-sec2-ul li{
+    list-style: none;
+    padding: 0 1rem;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.footer-sec2-ul li:hover{
+    color: #c94f14;
+}
+
+.footer-sec2-ul li:last-child{
+    border: 0;
+}

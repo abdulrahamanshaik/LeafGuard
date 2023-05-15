@@ -1,0 +1,32 @@
+.LGAdvantage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+.lg-advantages-wrapper{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem;
+    position: relative;
+    max-width: 1240px;
+    min-width: 1240px;
+}
+.transcript-wrapper{
+    text-align: left;
+    width: 100%;
+}
+
+.transcript-text{
+        text-decoration: none;
+        
+        /* display: block; */
+        color: #3F5154;
+        font-size: 22px;
+        font-weight: bold;
+}
+.transcript-text:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}

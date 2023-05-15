@@ -1,0 +1,37 @@
+.anim-sec-wrapper{
+    background-color: #eeeeed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    margin-top: 5rem;
+}
+
+.features-wrapper{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.anim-sec-wrapper video{
+    height: 452px;
+    width: 392px;
+    margin: 0px 4rem;
+}
+
+
+@media screen and (max-width:1000px) {
+    .anim-sec-wrapper{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .features-wrapper{
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    .anim-sec-wrapper video{
+        margin: auto;
+    }
+}

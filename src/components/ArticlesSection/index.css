@@ -1,0 +1,34 @@
+.articles-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.articles-wrapper{
+    max-width: 1240px;
+}
+
+.articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.also-of-intrest{
+    display: flex;
+    font-size: 1.125rem;
+    margin: 2rem;
+}
+
+.also-of-intrest div{
+    font-weight: 600;
+}
+
+.also-of-intrest-links{
+    color: #c94f14;
+    text-decoration: none;
+    margin: 0 1rem;
+}

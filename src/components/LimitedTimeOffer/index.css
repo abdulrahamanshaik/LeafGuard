@@ -1,0 +1,45 @@
+/* *{
+    border: 2px solid red;
+} */
+
+.limited-time-offer-wrapper{
+    /* height: 40px; */
+    background-color: #27A03A;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 99;
+    
+}
+.limited-time-offer-wrapper > div{
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.LTO-close-btn{
+    cursor: pointer;
+    margin-left: 12px;
+    transition: all .2s ease;
+}
+.LTO-close-btn:hover{
+    transform: scale(1.4);
+}
+
+.limited-time-offer-wrapper > div > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+}
+.limited-time-offer-wrapper > div > div > p{
+    font-size: 24px;
+    margin-right: 8px;
+}

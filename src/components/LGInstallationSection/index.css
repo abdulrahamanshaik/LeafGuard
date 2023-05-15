@@ -1,0 +1,63 @@
+.LGIS{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F3;
+}
+.LGIS h1:first-child{
+    margin-top: 2rem;
+    font-size: 1.875rem;
+    color: #222432;
+}
+
+.LGI-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 2rem 0;
+    max-width: 1240px;
+    /* z-index: 1; */
+}
+
+.LGI-card div .img{
+    position: relative;
+    /* z-index: 9; */
+}
+
+.LGI-cc{
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 6px 2px #e8e8e8;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.LGI-cc-p{
+    text-align: left;
+    font-size: 1.125rem;
+    color: #696967;
+}
+
+.LGI-card .dis{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.LGI-card .custom-btn-wrapper{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

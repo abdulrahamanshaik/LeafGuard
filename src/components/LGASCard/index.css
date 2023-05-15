@@ -1,0 +1,109 @@
+.LG-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 2rem 0;
+}
+.blur{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.LGA-cc{
+    padding: 1rem 2rem;
+    box-shadow: 0 0 6px 2px #e8e8e8;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.LGA-cc h3{
+    color: #3f5154;
+    font-size: 1.625rem;
+}
+.LGA-cc strong{
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #696967;
+    width: 100%;
+}
+
+
+.dis{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+
+}
+.dis div{
+    margin: 0rem 4px;
+}
+.dis div h1{
+    color: #222432;
+    font-size: 29px;
+    font-weight: 700px;
+}
+.dis div p{
+    color: #696967;
+    font-size: 18px;
+}
+
+.custom-btn-wrapper{
+    width: 100%;
+    text-align: left;
+}
+
+
+
+
+.LGA-cc2{
+    align-items: flex-start;
+    text-align: left;
+}
+
+.LGA-cc2 p{
+    font-size: 1.125rem;
+    color: #696967;
+}
+
+.LGA-cc2 div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: c;
+}
+
+.LGA-cc2 div ul{
+    position: relative;
+}
+
+.LGA-cc2 div li{
+    list-style: none;
+    color: #696967;
+    line-height: 36px;
+}
+
+
+.LGA-cc2 li::before{
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #0d6540;
+    left: -16px;
+    margin-top: 14px;
+    border-radius: 50%;
+}

@@ -1,0 +1,24 @@
+.feature-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+    font-weight: 500;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222432;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.feature-wrapper p{
+    margin-top: 12px;
+    font-size: 20px;
+    color: #212529;
+}

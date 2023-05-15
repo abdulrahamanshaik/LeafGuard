@@ -1,0 +1,95 @@
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: modalFadeIn;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .play-btn{
+    height: 80px;
+    width: 80px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.play-btn:hover{
+    background-color: #c94f14;
+}
+  
+
+
+.close-btn{
+    padding: 8px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    transition: all .2s ease;
+}
+
+.close-btn:hover{
+  color: green;
+  font-weight: bold;
+}
+
+.loader{
+  height: 40px;
+  width: 40px;
+  /* background-color: red; */
+  border: 6px solid transparent; /* Light grey */
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
