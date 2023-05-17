@@ -34,6 +34,6 @@
     .anim-sec-wrapper video{
         margin: none;
         height: none;
-        width: 100%;
+        width: unset;
     }
 }

@@ -103,6 +103,7 @@ const Navbar = () => {
               </h1>
               {navLinks.map((n) => (
                 <li
+                  key={`1+${n}`}
                   onClick={(e) => {
                     if (linksData[n] !== "") {
                       showChildrenDrawer(e);
@@ -126,7 +127,7 @@ const Navbar = () => {
               <h2 className="mob-submenu-title">{mobSublinks}</h2>
               <ol className="mobile-ol">
                 {linksData[mobSublinks].map((n) => (
-                  <li>{n}</li>
+                  <li key={`1+${n}`}>{n}</li>
                 ))}
               </ol>
             </Drawer>

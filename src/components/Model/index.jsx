@@ -47,10 +47,9 @@ const Model = (props) => {
             <iframe
               title="vimeo-player"
               src={`https://player.vimeo.com/video/${vidId}`}
-              width="680"
-              height="400"
+              width="100%"
+              height="100%"
               frameborder="0"
-              allowfullscreen
               onLoad={() => setisVimeoLoaded(!isVimeoLoaded)}
             ></iframe>
             <button className="close-btn" onClick={handleCloseModal}>

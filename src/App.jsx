@@ -21,8 +21,8 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <AnimSection />
-      {/* <LGAdvantageSection /> */}
-      {/* <LGInstallationSection /> */}
+      <LGAdvantageSection />
+      <LGInstallationSection />
       <LifetimeSection />
       <MyCarousel />
       <Articles />

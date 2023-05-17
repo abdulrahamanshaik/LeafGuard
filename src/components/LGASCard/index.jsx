@@ -6,7 +6,6 @@ import Model from "../Model";
 
 const LGASCard = (props) => {
   const { bgUrl, invert, vidId, num } = props;
-  // console.log("vidId", vidId);
   return (
     <div className="LG-card">
       <VideoWrapper url={bgUrl} invert={invert}>

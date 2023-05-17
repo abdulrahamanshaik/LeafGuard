@@ -18,12 +18,17 @@
     animation-name: modalFadeIn;
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
+    z-index: 999999999999999;
+    
   }
   
   .modal-content {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
+    height: 60vh;
+    width: 80vh;
+    z-index: 999999999999999;
   }
   
   @keyframes modalFadeIn {
@@ -91,5 +96,12 @@
   }
   to{
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (width <= 900px) {
+  .modal-content {
+    height: 40vh;
+    width: 60vh;
   }
 }
