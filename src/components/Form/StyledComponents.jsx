@@ -42,4 +42,7 @@ export const CustomForm = styled.form`
       color: #ccc;
     }
   }
+  @media screen and (width <= 900px) {
+    display: none;
+  }
 `;

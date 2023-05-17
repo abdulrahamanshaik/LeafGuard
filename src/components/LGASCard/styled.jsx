@@ -6,4 +6,7 @@ export const VideoWrapper = styled.div`
   background: url(${(props) => props.url}) no-repeat center;
   background-size: cover;
   order: ${(props) => (props.invert ? 9999999 : 0)};
+  @media screen and (width <= 900px) {
+    width: 100vw;
+  }
 `;

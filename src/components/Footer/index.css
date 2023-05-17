@@ -122,3 +122,49 @@
 .footer-sec2-ul li:last-child{
     border: 0;
 }
+
+@media screen and (width <= 900px) {
+    .footer-wrapper{
+        min-width: 100%;
+    }
+    .footer-sec1{
+        width: 100vw;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .footer-sec-1-links{
+        flex-wrap: wrap;
+        width: 100%;
+        flex-grow: 1;
+        border: 0;
+    }
+    .footer-sec1-links{
+        border: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .main-links{
+        font-size: 1.2rem;
+    }
+    .links-wrapper{
+        flex-grow: 1;
+    }
+    .connect-with-us{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-social-links{
+        justify-content: center;
+    }
+    .footer-sec2{
+        flex-wrap: wrap;
+    }
+    .footer-sec2-ul{
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+    .footer-sec2-ul > li{
+        border: 0;
+    }
+}

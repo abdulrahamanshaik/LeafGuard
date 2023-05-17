@@ -92,11 +92,20 @@ const MyCarousel = () => {
       "LeafGuard of Columbia was very professional. I was very pleased with the way they conducted themselves and how quickly they worked.",
     ],
   ];
+  const breakPoints = [
+    { width: 1, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 850, itemsToShow: 3 },
+    // { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
+    // { width: 1450, itemsToShow: 5 },
+    // { width: 1750, itemsToShow: 6 },
+  ];
   const ind = [1, 4, 7, 10];
   return (
     <div className="mycarousel">
       <h1>Millions of Happy Family Members</h1>
       <Carousel
+        breakPoints={breakPoints}
         itemsToShow={3}
         itemsToScroll={3}
         renderArrow={myArrow}

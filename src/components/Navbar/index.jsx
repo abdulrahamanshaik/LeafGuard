@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./index.css";
-import { BiSearchAlt2 } from "react-icons/bi";
-import { BsTelephoneFill, BsSearch } from "react-icons/bs";
+import { BiSearchAlt2, BiMenu } from "react-icons/bi";
+import { BsTelephoneFill, BsSearch, BsChevronRight } from "react-icons/bs";
+import { Drawer } from "antd";
 
 import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
   const [issearchOpen, setIssearchOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [childrenDrawer, setChildrenDrawer] = useState(false);
+  const [mobSublinks, setMobSublinks] = useState("PRODUCTS");
 
   const navLinks = [
     "OFFERS",
@@ -31,6 +35,20 @@ const Navbar = () => {
     ],
     REVIEWS: "",
     BLOG: "",
+  };
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+  const showChildrenDrawer = (e) => {
+    setMobSublinks(e.target.textContent);
+    setChildrenDrawer(true);
+    console.log(linksData[e.target.textContent]);
+  };
+  const onChildrenDrawerClose = () => {
+    setChildrenDrawer(false);
   };
 
   return (
@@ -72,6 +90,47 @@ const Navbar = () => {
             className="search-icon"
             onClick={() => setIssearchOpen(!issearchOpen)}
           />
+          <BiMenu onClick={showDrawer} className="mobile-menu" />
+          <Drawer
+            title="Multi-level drawer"
+            width={"90%"}
+            onClose={onClose}
+            open={open}
+          >
+            <ol className="mobile-ol">
+              <h1 className="close-drawer" onClick={onClose}>
+                x
+              </h1>
+              {navLinks.map((n) => (
+                <li
+                  onClick={(e) => {
+                    if (linksData[n] !== "") {
+                      showChildrenDrawer(e);
+                    }
+                  }}
+                >
+                  {n}
+                  {linksData[n] !== "" && <BsChevronRight />}
+                </li>
+              ))}
+            </ol>
+            <Drawer
+              title="Two-level Drawer"
+              width={"90%"}
+              onClose={onChildrenDrawerClose}
+              open={childrenDrawer}
+            >
+              <h1 className="close-drawer" onClick={onChildrenDrawerClose}>
+                x
+              </h1>
+              <h2 className="mob-submenu-title">{mobSublinks}</h2>
+              <ol className="mobile-ol">
+                {linksData[mobSublinks].map((n) => (
+                  <li>{n}</li>
+                ))}
+              </ol>
+            </Drawer>
+          </Drawer>
         </div>
         <div className="call-wrapper">
           <BsTelephoneFill className="tel-icon" />

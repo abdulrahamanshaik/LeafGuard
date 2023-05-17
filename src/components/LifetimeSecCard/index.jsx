@@ -1,6 +1,5 @@
 import React from "react";
 import CustomBTN from "../CustomBTN/index.jsx";
-import CustomButton from "../CustomButton/index.jsx";
 import { LTSC } from "./styled.jsx";
 
 const LifetimeSecCard = (props) => {

@@ -43,3 +43,9 @@
     font-size: 24px;
     margin-right: 8px;
 }
+
+@media screen and (width <= 900px) {
+    .limited-time-offer-wrapper{
+        display: none;
+    }
+}

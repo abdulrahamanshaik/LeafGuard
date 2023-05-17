@@ -22,3 +22,9 @@
     font-size: 20px;
     color: #212529;
 }
+
+@media screen and (width <= 900px) {
+    .feature-wrapper p{
+        font-size: 16px;    
+    }
+}

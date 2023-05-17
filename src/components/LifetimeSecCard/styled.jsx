@@ -27,4 +27,10 @@ export const LTSC = styled.div`
       margin: 0.5rem 0;
     }
   }
+
+  @media screen and (width <= 900px) {
+    height: auto;
+    width: auto;
+    margin: 1rem;
+  }
 `;

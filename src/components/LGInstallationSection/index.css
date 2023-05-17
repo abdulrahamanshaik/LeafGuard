@@ -61,3 +61,40 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+@media screen and (width <= 900px) {
+    .LGI-card{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        max-width: none;
+    }
+    .LGIS h1:first-child{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .LGI-card div .img{
+        position: absolute;
+        height: 100%;
+        width: 26rem;
+    }
+    .LGI-cc{
+        padding: 1rem;
+        width: 100%;
+    }
+    .LGI-cc-p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .dis{
+        margin: 1rem 0;
+    }
+    .dis > div > p{
+        font-size: 14px;
+    }
+    .imgs > img{
+        width: 100vw;
+    }
+}

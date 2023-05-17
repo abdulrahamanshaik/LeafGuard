@@ -72,3 +72,20 @@
 .activeDot{
     background-color: #c94f14;
 }
+
+@media screen and (width <= 900px) {
+    .mydivs{
+        padding: 1rem;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .myDivBorder{
+        border: 0;
+    }
+    .mycarousel h1:first-child{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}

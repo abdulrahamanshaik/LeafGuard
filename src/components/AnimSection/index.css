@@ -21,7 +21,7 @@
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (width <= 900px) {
     .anim-sec-wrapper{
         flex-direction: column;
         padding: 2rem;
@@ -32,6 +32,8 @@
         height: auto;
     }
     .anim-sec-wrapper video{
-        margin: auto;
+        margin: none;
+        height: none;
+        width: 100%;
     }
 }

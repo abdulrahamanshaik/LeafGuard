@@ -14,6 +14,7 @@
 .articles{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     text-align: left;
 }
@@ -31,4 +32,18 @@
     color: #c94f14;
     text-decoration: none;
     margin: 0 1rem;
+}
+
+
+@media screen and (width <= 900px) {
+    .articles-section{
+        flex-direction: column;
+    }
+    .articles{
+        flex-direction: column;
+    }
+    .also-of-intrest{
+        flex-direction: column;
+        margin: 1rem;
+    }
 }

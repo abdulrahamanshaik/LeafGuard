@@ -1,5 +1,5 @@
 .LGAdvantage{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -19,14 +19,19 @@
 }
 
 .transcript-text{
-        text-decoration: none;
-        
-        /* display: block; */
-        color: #3F5154;
-        font-size: 22px;
-        font-weight: bold;
+    text-decoration: none;
+    color: #3F5154;
+    font-size: 22px;
+    font-weight: bold;
 }
 .transcript-text:hover{
     text-decoration: underline;
     text-decoration-thickness: 3px;
+}
+
+@media screen and (width <= 900px) {
+    .lg-advantages-wrapper{
+        max-width: 100vw;
+        min-width: none;
+    }
 }
