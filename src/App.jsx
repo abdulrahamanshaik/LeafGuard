@@ -11,15 +11,18 @@ import Articles from "./components/ArticlesSection";
 import Footer from "./components/Footer";
 import LGInstallationSection from "./components/LGInstallationSection";
 import LimitedTimeOffer from "./components/LimitedTimeOffer";
+import GetFreeEstimate from "./components/GetFreeEstimate";
+
+import useScrollPosition from "@react-hook/window-scroll";
 
 const App = () => {
-  window.addEventListener("scroll", (e) => {
-    console.log(window.scrollY >= 500 && "Touch");
-  });
+  const scrollY = useScrollPosition();
+
   return (
     <BrowserRouter>
       <Navbar />
       <HeroSection />
+      {scrollY >= 500 && <GetFreeEstimate />}
       <AnimSection />
       <LGAdvantageSection />
       <LGInstallationSection />

@@ -1,0 +1,38 @@
+.get-free-estimate-btn{
+    height: 70px;
+    padding: 1rem 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+    background-color: #c94f14;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    z-index: 99;
+    color: #fff;
+    /* animation: dis .5s ease-in-out forwards; */
+}
+.get-free-estimate-btn p{
+    text-align: center;
+    animation: slide .5s ease forwards;
+}
+
+
+@keyframes slide {
+  from {width: 0;}
+  to {width: 100px;}
+}
+
+
+@media screen and (width <= 900px) {
+    .get-free-estimate-btn{
+        display: none;
+    }
+}

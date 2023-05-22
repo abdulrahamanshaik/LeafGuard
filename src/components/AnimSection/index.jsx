@@ -4,8 +4,11 @@ import "./index.css";
 import AnimSecFeature from "../AnimSection-Features";
 
 const AnimSection = () => {
+  const scroll = (e) => {
+    console.log(e);
+  };
   return (
-    <div className="anim-sec-wrapper">
+    <div className="anim-sec-wrapper" onScroll={scroll}>
       <div className="features-wrapper">
         <AnimSecFeature
           url={

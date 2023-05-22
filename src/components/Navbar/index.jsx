@@ -96,6 +96,7 @@ const Navbar = () => {
             width={"90%"}
             onClose={onClose}
             open={open}
+            // zIndex={999999999999999999999999999999999999999999}
           >
             <ol className="mobile-ol">
               <h1 className="close-drawer" onClick={onClose}>
