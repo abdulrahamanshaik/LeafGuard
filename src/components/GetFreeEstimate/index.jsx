@@ -24,7 +24,7 @@ const GetFreeEstimate = () => {
         width={"34%"}
         open={open}
         onClose={onClose}
-        // closable={false}
+        // closable={true}
         zIndex={99999999999999}
         style={{ paddingTop: "40px" }}
       >
