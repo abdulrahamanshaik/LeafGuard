@@ -1,2 +1,2 @@
 # LeafGuard
-This a clone of a Website
+This is clone of a Website
