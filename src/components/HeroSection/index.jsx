@@ -10,7 +10,7 @@ const Hero = () => {
       <video className="bgVid" src={HeroVid} autoPlay muted loop />
       <div className="hero-blur"></div>
       <div className="container">
-        <h1>Goodbye Gutter Clogging… Forever !</h1>
+        <h1>Goodbye Gutter Clogging.… Forever !</h1>
         <p className="p1">
           LeafGuard is the seamless gutter system guaranteed to never clog*.
         </p>
